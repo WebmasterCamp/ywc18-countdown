@@ -1,0 +1,18 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.countdown-preview {
+  width: 300px;
+  max-width: 50%;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 0.3em;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 24px;
+}

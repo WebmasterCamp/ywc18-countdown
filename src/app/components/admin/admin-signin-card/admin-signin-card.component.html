@@ -1,0 +1,37 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Admin Authentication</mat-card-title>
+  </mat-card-header>
+  <form [formGroup]="signInForm" (ngSubmit)="signIn(signInForm.value)">
+    <mat-form-field class="form-input">
+      <input
+        matInput
+        type="email"
+        autocomplete="email"
+        placeholder="Email"
+        formControlName="email"
+      />
+    </mat-form-field>
+    <mat-form-field class="form-input">
+      <input
+        matInput
+        type="password"
+        autocomplete="password"
+        placeholder="Password"
+        formControlName="password"
+      />
+    </mat-form-field>
+    <div class="submit-wrapper">
+      <button
+        class="submit-button"
+        mat-raised-button
+        color="primary"
+        type="submit"
+        [disabled]="signingIn"
+      >
+        Sign in with Email
+      </button>
+    </div>
+  </form>
+  <firebase-ui></firebase-ui>
+</mat-card>

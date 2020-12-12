@@ -1,0 +1,18 @@
+<div class="container">
+  <app-admin-action-card *ngIf="user && permission"></app-admin-action-card>
+  <mat-spinner *ngIf="user && checkingPermission"></mat-spinner>
+  <app-admin-signin-card
+    *ngIf="!user && !checkingPermission"
+  ></app-admin-signin-card>
+  <mat-card *ngIf="user && !checkingPermission && !permission">
+    <mat-card-header>
+      <mat-card-title>This user do not have admin permission</mat-card-title>
+      <button mat-raised-button color="warn" (click)="signOut()">
+        Sign out
+      </button>
+    </mat-card-header>
+  </mat-card>
+  <div class="countdown-preview">
+    <app-countdown></app-countdown>
+  </div>
+</div>

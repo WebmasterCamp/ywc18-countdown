@@ -1,0 +1,116 @@
+<mat-card class="container">
+  <mat-card-header>
+    <mat-card-title>Action</mat-card-title>
+  </mat-card-header>
+  <h4>End Time</h4>
+  <form class="update-form" (submit)="updateCountdown()">
+    <mat-form-field class="input-wrapper">
+      <input
+        matInput
+        type="number"
+        [formControl]="timeHourControl"
+        placeholder="End at next input hour"
+      />
+    </mat-form-field>
+    <mat-form-field class="input-wrapper">
+      <input
+        matInput
+        type="number"
+        min="0"
+        max="59"
+        [formControl]="timeMinuteControl"
+        placeholder="End at next input minute"
+      />
+    </mat-form-field>
+    <button
+      class="submit-button"
+      mat-raised-button
+      color="primary"
+      type="submit"
+    >
+      Update
+    </button>
+  </form>
+  <mat-divider></mat-divider>
+  <h4>Specific End Time</h4>
+  <form class="update-form" (submit)="updateCountdownWithDateTime()">
+    <mat-form-field class="input-wrapper">
+      <input
+        matInput
+        [matDatepicker]="picker"
+        [formControl]="endDateControl"
+        placeholder="Set specific end date"
+      />
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field class="input-wrapper">
+      <input
+        matInput
+        type="time"
+        [formControl]="endHrsControl"
+        placeholder="Set specific end time"
+      />
+    </mat-form-field>
+    <button
+      class="submit-button"
+      mat-raised-button
+      color="primary"
+      type="submit"
+    >
+      Update
+    </button>
+  </form>
+  <mat-divider></mat-divider>
+  <h4>Text</h4>
+  <form class="update-form" (submit)="updateText()">
+    <mat-form-field class="input-wrapper">
+      <input
+        matInput
+        type="text"
+        [formControl]="textControl"
+        placeholder="Set showing text"
+      />
+    </mat-form-field>
+    <button
+      class="submit-button"
+      mat-raised-button
+      color="primary"
+      type="submit"
+    >
+      Update
+    </button>
+  </form>
+  <mat-divider></mat-divider>
+  <!-- <h4>Trigger</h4>
+  <mat-form-field>
+    <mat-label>Showing</mat-label>
+    <mat-select [formControl]="showingControl">
+      <mat-option value="countdown">
+        Countdown
+      </mat-option>
+      <mat-option value="text">
+        Text
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <div class="action-bar">
+    <a class="back-button" mat-raised-button color="accent" routerLink="/"
+      >{{ '<' }} Back</a
+    >
+    <button
+      mat-raised-button
+      color="primary"
+      (click)="handleShowingChange('countdown'); updateCountdown()"
+    >
+      Show countdown + Set end time
+    </button>
+    <button
+      mat-raised-button
+      color="primary"
+      (click)="handleShowingChange('countdown'); updateCountdownWithDateTime()"
+    >
+      Show countdown + Set specific end time
+    </button>
+  </div> -->
+</mat-card>

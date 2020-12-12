@@ -1,0 +1,17 @@
+.action-bar {
+  display: flex;
+  align-self: stretch;
+  justify-content: flex-end;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content {
+  align-self: stretch;
+  overflow: initial;
+}
+.input-wrapper {
+  width: 100%;
+}

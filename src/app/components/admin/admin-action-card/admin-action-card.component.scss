@@ -1,0 +1,41 @@
+:host {
+  max-width: 100%;
+  max-height: 100%;
+}
+.container {
+  overflow: scroll;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.update-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 8px;
+}
+
+.submit-button {
+  height: fit-content;
+}
+
+.input-wrapper {
+  margin-right: 24px;
+}
+
+.action-bar {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  a,
+  button {
+    width: fit-content;
+    margin-bottom: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
