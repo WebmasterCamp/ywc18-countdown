@@ -16,7 +16,7 @@
   display: flex;
   max-width: 100%;
   cursor: pointer;
-  background-image: url('/assets/bd01.png');
+  background-image: url('/assets/ywc-18-countdown-bg.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -29,21 +29,21 @@
 
 @keyframes text-warning {
   0% {
-    color: rgba(228, 58, 151);
+    color: #F37637;
     transform: scale(1);
   }
   25% {
     color: #fefefe;
   }
   50% {
-    color: rgba(228, 58, 151);
+    color: #F37637;
     transform: scale(1.2);
   }
   75% {
     color: #fefefe;
   }
   100% {
-    color: rgba(228, 58, 151);
+    color: #F37637;
     transform: scale(1);
   }
 }
@@ -124,5 +124,5 @@
   position: fixed;
   right: 1.5em;
   top: 1.5em;
-  width: 15em;
+  width: 12.5em;
 }

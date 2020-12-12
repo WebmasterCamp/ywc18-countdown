@@ -1,3 +1,3 @@
-# Ywc17Countdown
+# YWC18 Countdown
 
-This project is a countdown system using in YWC17 workshop process.
+This project is a countdown system using in YWC18 workshop process.
