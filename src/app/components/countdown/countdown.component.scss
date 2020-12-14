@@ -29,21 +29,21 @@
 
 @keyframes text-warning {
   0% {
-    color: #F37637;
+    color: #f37637;
     transform: scale(1);
   }
   25% {
     color: #fefefe;
   }
   50% {
-    color: #F37637;
+    color: #f37637;
     transform: scale(1.2);
   }
   75% {
     color: #fefefe;
   }
   100% {
-    color: #F37637;
+    color: #f37637;
     transform: scale(1);
   }
 }
@@ -98,7 +98,7 @@
   justify-content: center;
   align-items: center;
   left: 50%;
-  width: 35em;
+  width: 43em;
   transform: translateX(-50%);
 }
 
