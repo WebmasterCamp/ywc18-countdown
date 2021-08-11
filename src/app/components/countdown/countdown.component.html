@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" [ngClass]="{ 'live-mode': isLiveMode }">
   <a routerLink="/admin">
     <div [ngClass]="{ 'text-background': true, warn: isEnd }">
       <p *ngIf="text" class="showing-text">{{ text }}</p>
@@ -9,8 +9,8 @@
       </p>
 
     </div>
+  </a>
     <img class="sponsor-container" src="/assets/sponsors.svg" />
     <img class="ywc-logo" src="/assets/ywc18-logo-white.svg" />
-    <img class="ywc-logo-2" src="/assets/ywc18-theme-logo-orange.svg" />
-  </a>
+    <img class="ywc-logo-2" src="/assets/ywc18-theme-logo-orange.svg" (click)="toggleLiveMode()"/>
 </div>

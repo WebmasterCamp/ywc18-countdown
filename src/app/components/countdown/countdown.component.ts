@@ -17,6 +17,9 @@ export class CountdownComponent implements OnInit, OnDestroy {
   text: string;
   showText: boolean;
   timeLetters: string[];
+
+  isLiveMode: boolean
+
   constructor(private countdown: CountdownService) {}
 
   ngOnInit() {
@@ -46,6 +49,11 @@ export class CountdownComponent implements OnInit, OnDestroy {
 
   ngOnDestroy() {
     this.countdownSubscription.unsubscribe();
+  }
+
+  toggleLiveMode() {
+    // Config for live
+    this.isLiveMode = !this.isLiveMode
   }
 
   getTimeDiff(date: Date) {
