@@ -5,6 +5,7 @@ import { CountdownComponent } from './components/countdown/countdown.component';
 
 const routes: Routes = [
   { path: '', component: CountdownComponent, pathMatch: 'full' },
+  { path: 'live', component: CountdownComponent, pathMatch: 'full' },
   { path: 'admin', component: AdminComponent }
 ];
 

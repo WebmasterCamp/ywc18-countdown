@@ -53,6 +53,14 @@ export class CountdownComponent implements OnInit, OnDestroy {
 
   toggleLiveMode() {
     // Config for live
+    console.log(window.location.pathname)
+    if (window.location.pathname.includes('live')) {
+      if(this.isLiveMode) {
+        document.getElementsByTagName('body')[0].style.background = '#111'
+      } else {
+        document.getElementsByTagName('body')[0].style.background = 'none'
+      }
+    }
     this.isLiveMode = !this.isLiveMode
   }
 
