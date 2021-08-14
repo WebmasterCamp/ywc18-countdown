@@ -55,13 +55,13 @@ export class CountdownComponent implements OnInit, OnDestroy {
     // Config for live
     console.log(window.location.pathname)
 
-    if(this.isLiveMode) {
-      document.getElementsByTagName('body')[0].style.background = '#111'
-    } else {
-      document.getElementsByTagName('body')[0].style.background = 'none'
-    }
+    // if(this.isLiveMode) {
+    //   document.getElementsByTagName('body')[0].style.background = '#111'
+    // } else {
+    //   document.getElementsByTagName('body')[0].style.background = 'none'
+    // }
 
-    this.isLiveMode = !this.isLiveMode
+    // this.isLiveMode = !this.isLiveMode
   }
 
   getTimeDiff(date: Date) {
