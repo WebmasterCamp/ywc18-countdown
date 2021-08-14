@@ -38,11 +38,11 @@ export class CountdownComponent implements OnInit, OnDestroy {
           )
         ),
         map(time => (this.isEnd ? '00:00:00' : time)),
-        startWith('LOADING..')
+        startWith('')
       )
       .subscribe({
         next: letters => {
-          this.timeLetters = letters.split('');
+          this.timeLetters = letters.split('').slice(3);
         }
       });
   }
